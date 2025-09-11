@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title> Document </title>
     <style>
@@ -9,67 +8,76 @@
             height: 100vh;
             background-color: burlywood;
             display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
+            flex-direction: row;
+            justify-content: center;
             border: 3px solid red;
-            text-align: center;
-            overflow: scroll;
-            box-sizing: border-box;
-
+           
+            
         }
 
-        .first {
+        .left {
+            width: 50vw;
+            height: 100vh;
+            background-color: rgb(66, 110, 13);
+        }
+
+        .left-top {
             width: 100%;
             height: 33.3%;
-            background-color: rgb(198, 203, 192);
-            font-size: 50px;
-            text-align: center;
-            display: flex;
-        }
-        .one{
-          width:50%;
-          height: 33.3%;
-          background-color: blue;
-        }
-        . {}
-
-        .second {
-            width: 100%;
-            height: 33.3%;
-            background-color: rgba(255, 64, 0, 0.931);
-            font-size: 50px;
-            text-align: center;
-            align-items: center;
-            justify-content: flex-start;
+            background-color: blue;
         }
 
-        .third {
-            width: 100%;
+        .left-middle {
+            width: 50%;
             height: 33.3%;
             background-color: chartreuse;
-            font-size: 50px;
-            text-align: center;
         }
 
-        .fourth {
+        .left-bot {
             width: 100%;
-            height: 25%;
-            background-color: crimson;
-            font-size: 50px;
-            text-align: center;
+            height: 33.3%;
+            background-color: cornflowerblue;
+        }
+
+        .right {
+            width: 50vw;
+            height: 100vh;
+            background-color: rgba(255, 64, 0, 0.931);
+        }
+
+        .right-top {
+            width: 50%;
+            height: 33.3%;
+            background-color: black;
+        }
+
+        .right-middle {
+            width: 100%;
+            height: 33.3%;
+            background-color: darkgray;
+        }
+
+        .right-bot {
+            width: 50%;
+            height: 33.3%;
+            background-color: azure;
         }
     </style>
 </head>
 
 <body>
     <div class="main-box">
-        <div class="first">
-            <div class="one"></div>
+        <div class="left">
+            <div class="left-top"></div>
+            <div class="left-middle">
+                <div class="left-mid-one"></div>
+            </div>
+            <div class="left-bot"></div>
         </div>
-        <div class="second">2
-        </div>
-        <div class="third">3
+        <div class="right">
+            <div class="right-top"></div>
+            <div class="right-middle"></div>
+            <div class="right-bot"></div>
         </div>
     </div>
 </body>
