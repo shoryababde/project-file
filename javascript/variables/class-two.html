@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> 
+<p id="display'"></p>
+<p id="display-2"></p>
+<button onclick="getMoney()">Get ammount</button>
+    <script>
+        const name = "Shorya Babde"
+        let age = "15"
+        let address = "Laxmi Nagar,katol"
+        let phoneNumber = "1523563265"
+        const adharnumber = "5781 254 5405"
+        let grade = "9th"
+        console.log("original age is "+age)
+        age ="16"
+        console.log("new age "+age) 
+
+        function india(){
+            movieName ="ABCD"
+            console.log(movieName)
+        }
+        function USA(){
+            movieName ="Spider Man"
+            console.log(movieName)
+        }
+
+
+        let input = prompt("Enter your name")
+        alert(input)
+
+
+        let account = 1000
+        document.getElementById("display").innerHTML = account
+        let ammount=0
+        function getMoney(){
+        amount = prompt("Enter amount")
+        account = account - Number(amount)
+       document.getElementById("display-2").innerHTML = account
+        }
+    </script>
+</body>
+
+</html>
