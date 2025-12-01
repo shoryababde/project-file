@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <input type="number" id="input-1">
+     <button onclick="inputThree()">submit</button>
+     <h1 id="display"></h1>
+
+
+
+    <script>
+        //input html to html
+        function input(){
+            let number = document.getElementById("input-1").value;
+            document.getElementById("display").innerHTML= number
+        }
+        //input prompt to html
+        function inputTwo(){
+            let number = prompt("Enter a number : ")
+            document.getElementById("display").innerHTML= number;
+        }
+        //input assign to html
+        function inputThree(){
+            let number = 100;
+            document.getElementById("display").innerHTML= number;
+        }
+    </script>
+</body>
+</html>
